@@ -89,7 +89,7 @@ class MicrosoftAuthApi:
                 "SiteName": "user.auth.xboxlive.com",
                 "RpsTicket": f"d={access_token}",
             },
-            "RelyingParty": "http://auth.xboxlive.com",
+            "RelyingParty": "https://auth.xboxlive.com",
             "TokenType": "JWT",
         }
         resp = requests.post(URL_XBL, json=data)
